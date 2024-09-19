@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Games</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>       
+
+    <header>
+        <h1>Quiz Games</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Game1/index.html">Game1 on Phone</a></li>
+                <li><a href="Game2/index.html">Game2 on Phone</a></li>
+                <li><a href="contact.jsx">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="styleSwitcher">Switch Style</button>
+    </header>
+    <main>
+        <section class="card-container">
+
+            <div class="card" id="game1-card" data-game="Game1/index.html">
+                <a href="#">
+                    <img src="Game1/img/GuessTheCountry.png" alt="Game 1 Image" class="game-image">
+                   
+                </a>
+                <div class="game-content" id="game1-content" style="display:none;">
+                    <iframe id="game1-iframe" src="" frameborder="0"></iframe>
+                </div>
+            </div>
+
+
+            <div class="card" id="game1-card" data-game="Game2/index.html">
+                <a href="#">
+                    <img src="Game2/img/GuessTheFlag.png" alt="Game 1 Image" class="game-image">
+                    
+                </a>
+                <div class="game-content" id="game1-content" style="display:none;">
+                    <iframe id="game2-iframe" src="" frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <script src="script.js"></script>
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/bvd" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/bvd" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/bvd" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/bvd" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p class="footer-name" id="animate-name">Victor-Daniel Bucur</p>
+    
+    </footer>
+</body>
+</html>
+
+
+

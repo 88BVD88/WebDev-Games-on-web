@@ -1,0 +1,122 @@
+
+
+h1 {
+    
+    font-size: 20px;
+    text-shadow: 3px 3px 10px #000;
+    color: #f1f1ea;
+    margin-left: 80vh;
+}
+
+/* START SCREEN */
+#start-screen {
+    display: block;
+    text-align: center;
+    font-size: 35px;
+}
+#start-screen {
+    margin: 60px 0;
+}
+.btn {
+    border: none;
+    background: #580078;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .5s;
+}
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* GAME SCREEN */
+#game-screen {
+    display: none;
+}
+.game-screen {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+.game-screen img {
+    max-width: 100px;
+    width: 30%;
+}
+.options {
+    max-width: 400px;
+    margin: auto;
+}
+/* Adjusting the .option class for smaller options */
+.option {
+    display: flex;
+    position: relative;
+    align-items: center;
+    max-width: 300px; /* Reduced from 400px for a smaller overall option size */
+    margin: 20px auto; /* Adjusted margin for spacing */
+    cursor: pointer;
+}
+
+.option .letter {
+    background-color: #580078;
+    width: 40px; /* Reduced width */
+    height: 40px; /* Reduced height */
+    font-size: 20px; /* Adjusted font size */
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 40px; /* Adjusted line height to vertically center the text */
+    border: 4px solid #fff; /* Adjusted border size */
+    position: relative;
+}
+
+.option .name {
+    background: #fff;
+    width: 100%;
+    font-size: 20px; /* Reduced font size */
+    position: absolute;
+    margin-left: 25px; /* Adjusted margin */
+    z-index: -1;
+    border-radius: 0 15px 15px 0; /* Adjusted border radius */
+    padding: 5px 0 5px 25px; /* Adjusted padding */
+}
+/* classes to be applied when the option is correct */
+.option .nameCorrect {
+    background-color: yellowgreen;
+    color: #fff;
+}
+.option .letterCorrect {
+    background-color: yellowgreen;
+    color: #fff;
+}
+/* classes to be applied when the chosen option is incorrect */
+.option .nameIncorrect {
+    background-color: darkred;
+    color: #fff;
+}
+.option .letterIncorrect {
+    background-color: darkred;
+    color: #fff;
+}
+
+/* END SCREEN */
+#end-screen {
+    display: none;
+    text-align: center;
+}
+#end-screen #numCorrect {
+    background-color: chartreuse;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+#end-screen #numIncorrect {
+    background-color: darkred;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}

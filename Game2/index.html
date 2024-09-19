@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <include src="new_try/index.html"></include>
+</head>
+<body>
+    <h1>GUESS THE FLAG</h1>
+
+    <!-- Start Screen -->
+    <div id="start-screen">
+        <p>Which country does this flag belong to?</p>
+        <button class="btn" onclick="startGame()">START GAME</button>
+    </div>
+
+    <!-- Game Screen -->
+    <div class="game-screen" id="game-screen">
+        <img src="img/ad.svg" alt="" id="flagImage">
+        <div class="options">
+            <div class="option" id="op0" onclick="checkAnswer(0)">
+                <div class="letter" id="l0">A</div>
+                <div class="name" id="n0">OPTION A</div>
+            </div>
+            <div class="option" id="op1" onclick="checkAnswer(1)">
+                <div class="letter" id="l1">B</div>
+                <div class="name" id="n1">OPTION B</div>
+            </div>
+            <div class="option" id="op2" onclick="checkAnswer(2)">
+                <div class="letter" id="l2">C</div>
+                <div class="name" id="n2">OPTION C</div>
+            </div>
+        </div>
+    </div>
+    <!-- End Screen -->
+    <div id="end-screen">
+        <h2>CORRECT: <span id="numCorrect">3</span></h2>
+        <h2>INCORRECT: <span id="numIncorrect">2</span></h2>
+        <button class="btn" onclick="returnToStart()">RETURN TO START</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
